@@ -1,0 +1,37 @@
+.container{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.transactionHistory {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid rgb(2, 50, 17);
+}
+
+.head{
+    background-color: rgb(112, 237, 147);
+    padding: 20px;
+}
+
+.head:not(:last-child){
+        border-right: 3px solid green;
+}
+
+.data {
+  padding: 20px;
+}
+
+.data:not(:last-child){
+  border-right: 3px solid green;
+}
+
+.data {
+  text-align: center;
+}
+
+.row:nth-child(even) {
+  background-color: seagreen;
+}
