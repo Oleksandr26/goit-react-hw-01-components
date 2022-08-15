@@ -1,0 +1,12 @@
+.data {
+  padding: 20px;
+  text-align: center;
+}
+
+.data:not(:last-child){
+  border-right: 3px solid green;
+}
+
+.row:nth-child(even) {
+  background-color: seagreen;
+}
