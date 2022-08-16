@@ -32,10 +32,10 @@ export function TransactionHistory({ items }) {
 TransactionHistoryBody.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.number.isRequired,
+      id: PropTypes.string.isRequired,
       type: PropTypes.string.isRequired,
       amount: PropTypes.string.isRequired,
-      currency: PropTypes.bool.isRequired,
+      currency: PropTypes.string.isRequired,
     })
   ),
 };
