@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import s from './TransactionHistoryBody.module.css';
 
 export function TransactionHistoryBody({ type, amount, currency }) {
@@ -10,14 +9,3 @@ export function TransactionHistoryBody({ type, amount, currency }) {
     </tr>
   );
 }
-
-TransactionHistoryBody.propTypes = {
-  props: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      type: PropTypes.string,
-      amount: PropTypes.string,
-      currency: PropTypes.bool,
-    })
-  ),
-};

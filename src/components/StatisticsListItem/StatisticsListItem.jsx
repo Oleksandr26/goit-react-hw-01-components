@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import s from './StatisticsListItem.module.css';
 
 export function StatisticsListItem({ label, percentage }) {
@@ -9,16 +8,6 @@ export function StatisticsListItem({ label, percentage }) {
     </li>
   );
 }
-
-StatisticsListItem.propTypes = {
-  props: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      label: PropTypes.string,
-      percentage: PropTypes.number,
-    })
-  ),
-};
 
 function getRandomColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
